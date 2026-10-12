@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "monthend-agent"
+version = "0.1.0"
+description = "Claude Code month-end agent: management packs, referenced workpapers and variance commentary behind a human review gate"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "openpyxl>=3.1,<4",
+  "pypdf>=5,<7",
+  "pydantic>=2.7,<3",
+]
+
+[project.optional-dependencies]
+# MCP servers and live Xero / Microsoft Graph connectors
+integrations = ["mcp>=1.28,<2", "httpx>=0.28,<1"]
+# Direct Claude API calls (commentary drafting, PDF extraction, LLM judge)
+llm = ["anthropic>=1.0,<2"]
+# Unattended overnight runs through the Claude Agent SDK
+agent = ["claude-agent-sdk>=0.2,<0.3"]
+dev = ["pytest>=8"]
+
+[project.scripts]
+monthend = "monthend.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["monthend*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

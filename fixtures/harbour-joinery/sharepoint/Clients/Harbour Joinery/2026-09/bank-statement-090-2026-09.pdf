@@ -1,0 +1,46 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+4 0 obj
+<< /Length 823 >>
+stream
+BT /F1 10 Tf 14 TL 40 800 Td
+(COASTAL MUTUAL BANK \(fictional\)            STATEMENT OF ACCOUNT) Tj T*
+(Account name: Harbour Joinery Pty Ltd) Tj T*
+(BSB 999-001  Account 0000 1234         Period 01/09/2026 - 30/09/2026) Tj T*
+() Tj T*
+(Date        Description                          Debit        Credit) Tj T*
+(01/09/2026  Opening balance                                   33,763.00) Tj T*
+(18/09/2026  Westend Physio INV-1040                       107,140.00) Tj T*
+(22/09/2026  Timberco Pty Ltd TC-88790        31,240.00) Tj T*
+(25/09/2026  Payroll PAY-0925                 41,850.00) Tj T*
+(30/09/2026  Account keeping and merchant fee     45.10) Tj T*
+(            \(other September activity summarised in Xero feed\)) Tj T*
+() Tj T*
+(30/09/2026  Closing balance                                   47,847.40) Tj T*
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000183 00000 n 
+0000001057 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1183
+%%EOF

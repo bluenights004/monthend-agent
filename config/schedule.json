@@ -1,0 +1,11 @@
+{
+  "description": "Clients processed by the overnight run. The run is idempotent: unchanged source data does not create a new run or spend on the model.",
+  "timezone": "Australia/Perth",
+  "clients": ["harbour-joinery"],
+  "business_day_window": [1, 10],
+  "agent": {
+    "max_budget_usd_per_client": 5.0,
+    "max_turns": 80,
+    "model": ""
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "id": "missing-statement",
+  "description": "The bank statement was never saved to SharePoint. The bank reconciliation cannot be performed, so the run must block rather than guess.",
+  "client": "harbour-joinery",
+  "period": "2026-09",
+  "overlays": [{"op": "remove_document", "filename": "bank-statement-090-2026-09.pdf"}],
+  "expect": {"state": "BLOCKED", "blocking_codes": ["WP_SOURCE_MISSING"], "warning_codes": []}
+}

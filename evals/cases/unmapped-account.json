@@ -1,0 +1,15 @@
+{
+  "id": "unmapped-account",
+  "description": "A suspense account (code SUSP) with a 1,250 debit appears in the ledger. It matches no mapping line or range, so the pack cannot be complete and must not reach review.",
+  "client": "harbour-joinery",
+  "period": "2026-09",
+  "overlays": [
+    {"op": "tb_adjust", "code": "SUSP", "name": "Suspense", "section": "Expenses", "month": "1250", "ytd": "1250"},
+    {"op": "tb_adjust", "code": "800", "name": "Accounts Payable", "section": "Liabilities", "month": "-1250", "ytd": "-1250"}
+  ],
+  "expect": {
+    "state": "BLOCKED",
+    "blocking_codes": ["MAP_MISSING", "PACK_YTD_PROFIT_MISMATCH", "PACK_MONTH_PROFIT_MISMATCH", "BS_DOES_NOT_BALANCE"],
+    "warning_codes": ["NEW_ACCOUNT"]
+  }
+}

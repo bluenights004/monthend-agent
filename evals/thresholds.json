@@ -1,0 +1,20 @@
+{
+  "description": "Minimum scores for the evaluation to pass. 'applies_to' limits a threshold to some commentary engines; the rules baseline is reported for comparison but is not expected to explain causes.",
+  "thresholds": {
+    "state_accuracy": {"min": 1.0},
+    "blocking_recall": {"min": 1.0},
+    "false_blocks": {"max": 0},
+    "warning_recall": {"min": 1.0},
+    "pack_cell_accuracy": {"min": 1.0},
+    "tie_accuracy": {"min": 1.0},
+    "reference_integrity": {"min": 1.0},
+    "commentary_coverage": {"min": 1.0},
+    "numeric_faithfulness": {"min": 1.0},
+    "direction_accuracy": {"min": 1.0},
+    "evidence_validity": {"min": 1.0},
+    "validator_mutation_detection": {"min": 1.0},
+    "validator_gold_false_positives": {"max": 0},
+    "driver_recall": {"min": 0.8, "applies_to": ["claude", "file"]},
+    "forbidden_claims": {"max": 0, "applies_to": ["claude", "file"]}
+  }
+}

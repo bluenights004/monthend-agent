@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+var/
+.env
+.env.*
+!.env.example
+evals/reports/2*
+.DS_Store
+.claude/settings.local.json
+*.egg-info/

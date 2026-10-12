@@ -1,0 +1,8 @@
+{
+  "id": "tb-out-of-balance",
+  "description": "A one-sided 100 debit to rent: the trial balance no longer balances. Must block.",
+  "client": "harbour-joinery",
+  "period": "2026-09",
+  "overlays": [{"op": "tb_adjust", "code": "420", "name": "Rent", "section": "Expenses", "month": "100", "ytd": "100"}],
+  "expect": {"state": "BLOCKED", "blocking_codes": ["TB_OUT_OF_BALANCE", "BS_DOES_NOT_BALANCE"], "warning_codes": []}
+}

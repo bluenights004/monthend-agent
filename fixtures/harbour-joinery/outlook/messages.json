@@ -1,0 +1,40 @@
+{
+  "value": [
+    {
+      "id": "msg-bayside-0922",
+      "receivedDateTime": "2026-09-22T09:14:00Z",
+      "from": {
+        "emailAddress": {
+          "name": "Accounts - Bayside Medical Centre",
+          "address": "accounts@baysidemedical.example"
+        }
+      },
+      "subject": "Stage 2 progress claim - please invoice this month",
+      "bodyPreview": "Hi team, our board approved bringing stage 2 forward. Please issue progress claim 2 in September rather than October so it lands in our current budget period."
+    },
+    {
+      "id": "msg-timberco-0820",
+      "receivedDateTime": "2026-08-20T03:02:00Z",
+      "from": {
+        "emailAddress": {
+          "name": "Timberco Sales",
+          "address": "sales@timberco.example"
+        }
+      },
+      "subject": "Price increase notice - effective 1 September 2026",
+      "bodyPreview": "Please note an 8% increase on hardwood and board lines effective 1 September 2026 due to supply constraints."
+    },
+    {
+      "id": "msg-sparky-0917",
+      "receivedDateTime": "2026-09-17T23:40:00Z",
+      "from": {
+        "emailAddress": {
+          "name": "Sparky Bros Electrical",
+          "address": "office@sparkybros.example"
+        }
+      },
+      "subject": "Coastal Dental rough-in moved to 6 October",
+      "bodyPreview": "Confirming the Coastal Dental electrical rough-in has moved to 6 October at the builder's request. September claim will only cover Westend final and Bayside works."
+    }
+  ]
+}

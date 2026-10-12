@@ -1,0 +1,8 @@
+{
+  "id": "missing-support",
+  "description": "The audit fee invoice supporting accrual ACC-03 is missing. The accrual still ties to the ledger, so this is a reviewer warning, not a block.",
+  "client": "harbour-joinery",
+  "period": "2026-09",
+  "overlays": [{"op": "remove_document", "filename": "inv-pinnacle-PA-7781.pdf"}],
+  "expect": {"state": "READY_FOR_REVIEW", "blocking_codes": [], "warning_codes": ["ACCRUAL_NO_SUPPORT"]}
+}

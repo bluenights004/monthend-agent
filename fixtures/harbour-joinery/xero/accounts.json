@@ -1,0 +1,284 @@
+{
+  "Accounts": [
+    {
+      "AccountID": "2517a844-c00e-51e4-a560-ce7374e74cfe",
+      "Code": "090",
+      "Name": "Business Bank Account",
+      "Type": "BANK",
+      "Class": "ASSET",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "eeb3ad9b-799e-5970-9912-e769a57b0420",
+      "Code": "091",
+      "Name": "Business Savings Account",
+      "Type": "BANK",
+      "Class": "ASSET",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "db1d6746-79e0-52e9-aea3-c9b33c7486f0",
+      "Code": "610",
+      "Name": "Accounts Receivable",
+      "Type": "CURRENT",
+      "Class": "ASSET",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "975fd266-2eac-53ca-b7d7-d116bec8fe71",
+      "Code": "620",
+      "Name": "Prepayments",
+      "Type": "CURRENT",
+      "Class": "ASSET",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "a3d6ad61-b448-54af-9af0-93bcfeb417e3",
+      "Code": "630",
+      "Name": "Inventory",
+      "Type": "INVENTORY",
+      "Class": "ASSET",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "57dbd5d3-bca1-531e-8205-e3cac6fbd120",
+      "Code": "710",
+      "Name": "Plant and Equipment at Cost",
+      "Type": "FIXED",
+      "Class": "ASSET",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "cc118de3-7193-58b6-915d-de795a402eea",
+      "Code": "711",
+      "Name": "Accumulated Depreciation - Plant",
+      "Type": "FIXED",
+      "Class": "ASSET",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "62a10bf9-b405-5498-b824-1284b6edbd4f",
+      "Code": "800",
+      "Name": "Accounts Payable",
+      "Type": "CURRLIAB",
+      "Class": "LIABILITY",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "7cad4cf8-be08-53e2-a9cf-072e3017ba88",
+      "Code": "820",
+      "Name": "GST",
+      "Type": "CURRLIAB",
+      "Class": "LIABILITY",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "e0076da8-a4e3-5311-849d-185ea49a382e",
+      "Code": "825",
+      "Name": "PAYG Withholdings Payable",
+      "Type": "CURRLIAB",
+      "Class": "LIABILITY",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "18e25876-604a-5a35-a017-9bb33da9847c",
+      "Code": "826",
+      "Name": "Superannuation Payable",
+      "Type": "CURRLIAB",
+      "Class": "LIABILITY",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "e75d4596-2559-5b2b-8696-6a1d0ea9e176",
+      "Code": "830",
+      "Name": "Accrued Expenses",
+      "Type": "CURRLIAB",
+      "Class": "LIABILITY",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "9cceb629-16b0-57a4-9353-225070b9031d",
+      "Code": "840",
+      "Name": "Provision for Annual Leave",
+      "Type": "CURRLIAB",
+      "Class": "LIABILITY",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "15898853-6b2b-5aa8-a2e0-01654a25a75d",
+      "Code": "900",
+      "Name": "Equipment Loan",
+      "Type": "TERMLIAB",
+      "Class": "LIABILITY",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "7ab1e2cb-98d3-5754-ad64-dba2145b84b8",
+      "Code": "960",
+      "Name": "Retained Earnings",
+      "Type": "EQUITY",
+      "Class": "EQUITY",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "3918d9dd-ecdb-56d3-b33f-9b1557e350e5",
+      "Code": "970",
+      "Name": "Share Capital",
+      "Type": "EQUITY",
+      "Class": "EQUITY",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "7be60c31-3d9f-5ff6-82b4-22e8512d584a",
+      "Code": "200",
+      "Name": "Sales - Fitout Contracts",
+      "Type": "REVENUE",
+      "Class": "REVENUE",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "7ce3269a-19bd-5092-ab8f-5e5128b4d1de",
+      "Code": "210",
+      "Name": "Sales - Joinery Products",
+      "Type": "REVENUE",
+      "Class": "REVENUE",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "af4fbb25-4577-575a-ae83-2f627e528e82",
+      "Code": "260",
+      "Name": "Other Revenue",
+      "Type": "OTHERINCOME",
+      "Class": "REVENUE",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "94c07d75-5037-5b28-ad29-eec84e450346",
+      "Code": "310",
+      "Name": "Materials",
+      "Type": "DIRECTCOSTS",
+      "Class": "EXPENSE",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "802dc4b7-c8a7-5bd6-b567-718adfad5fef",
+      "Code": "320",
+      "Name": "Subcontractors",
+      "Type": "DIRECTCOSTS",
+      "Class": "EXPENSE",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "804d4d86-fb60-5e7b-8084-947aef556809",
+      "Code": "330",
+      "Name": "Direct Wages",
+      "Type": "DIRECTCOSTS",
+      "Class": "EXPENSE",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "f417bebd-e6ab-5cc2-96aa-3c4d628a2348",
+      "Code": "400",
+      "Name": "Advertising",
+      "Type": "EXPENSE",
+      "Class": "EXPENSE",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "bea37b71-bcca-5bb2-9647-415a1809e6b6",
+      "Code": "404",
+      "Name": "Bank Fees",
+      "Type": "EXPENSE",
+      "Class": "EXPENSE",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "a7b4decf-3854-5817-a593-772ab7d663ac",
+      "Code": "412",
+      "Name": "Consulting & Accounting",
+      "Type": "EXPENSE",
+      "Class": "EXPENSE",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "35ff8be9-ee33-56cc-bf97-189854dac5a3",
+      "Code": "416",
+      "Name": "Depreciation",
+      "Type": "DEPRECIATN",
+      "Class": "EXPENSE",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "2d9a6f8e-081d-523f-9baf-be650c4b4271",
+      "Code": "420",
+      "Name": "Rent",
+      "Type": "OVERHEADS",
+      "Class": "EXPENSE",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "fc60f94b-a6c1-577a-89ca-b5bec4e07d7f",
+      "Code": "437",
+      "Name": "Interest Expense",
+      "Type": "EXPENSE",
+      "Class": "EXPENSE",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "eae295cb-4305-55be-84b6-6b8f22be0b74",
+      "Code": "445",
+      "Name": "Light, Power, Heating",
+      "Type": "OVERHEADS",
+      "Class": "EXPENSE",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "29015f50-3538-5255-8e52-5bf9678c512d",
+      "Code": "461",
+      "Name": "Software Subscriptions",
+      "Type": "OVERHEADS",
+      "Class": "EXPENSE",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "5cbc671a-e094-5974-b897-159e1063ee0f",
+      "Code": "466",
+      "Name": "Equipment Hire",
+      "Type": "EXPENSE",
+      "Class": "EXPENSE",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "2605ef79-539c-5cc1-a315-afe2bb6c9fb9",
+      "Code": "477",
+      "Name": "Salaries - Administration",
+      "Type": "EXPENSE",
+      "Class": "EXPENSE",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "5b39d7dd-481b-5c1f-b7c1-be1032edaf71",
+      "Code": "478",
+      "Name": "Superannuation",
+      "Type": "EXPENSE",
+      "Class": "EXPENSE",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "8e410d60-63ce-5ddf-b8bb-69a80e81ad76",
+      "Code": "489",
+      "Name": "Motor Vehicle Expenses",
+      "Type": "EXPENSE",
+      "Class": "EXPENSE",
+      "Status": "ACTIVE"
+    },
+    {
+      "AccountID": "b211ed1f-c2b1-5739-b7fd-8ec5832156a3",
+      "Code": "493",
+      "Name": "Insurance",
+      "Type": "EXPENSE",
+      "Class": "EXPENSE",
+      "Status": "ACTIVE"
+    }
+  ]
+}

@@ -1,0 +1,436 @@
+{
+  "engine": "rules",
+  "summary": {
+    "metrics": {
+      "cases": 8,
+      "state_accuracy": 1.0,
+      "blocking_recall": 1.0,
+      "false_blocks": 0,
+      "warning_recall": 1.0,
+      "pack_cell_accuracy": 1.0,
+      "tie_accuracy": 1.0,
+      "reference_integrity": 1.0,
+      "commentary_coverage": 1.0,
+      "numeric_faithfulness": 1.0,
+      "direction_accuracy": 1.0,
+      "evidence_validity": 1.0,
+      "driver_recall": 0.375,
+      "forbidden_claims": 0,
+      "validator_mutation_detection": 1.0,
+      "validator_gold_false_positives": 0
+    },
+    "failures": [],
+    "passed": true
+  },
+  "results": [
+    {
+      "id": "bank-rec-difference",
+      "description": "Xero cash is 500 higher than the bank statement can explain (balanced against retained earnings so the TB still balances). The bank reconciliation must show a 500 unexplained difference and block.",
+      "state": "BLOCKED",
+      "state_ok": true,
+      "blocking_expected": [
+        "BANKREC_UNEXPLAINED"
+      ],
+      "blocking_raised": [
+        "BANKREC_UNEXPLAINED"
+      ],
+      "blocking_missed": [],
+      "unexpected_blocks": [],
+      "warnings_expected": 1,
+      "warnings_missed": [],
+      "commentary": {
+        "material_lines": 5,
+        "material_covered": 5,
+        "coverage": 1.0,
+        "numbers_checked": 27,
+        "numbers_traced": 27,
+        "numeric_faithfulness": 1.0,
+        "direction_checks": 6,
+        "direction_accuracy": 1.0,
+        "evidence_citations": 5,
+        "evidence_valid": 1.0,
+        "mean_explained_share": 0.9978
+      },
+      "commentary_issues": [],
+      "commentary_author": "rules-baseline",
+      "ties": {
+        "checked": 1,
+        "misses": []
+      },
+      "references": {
+        "references": 20,
+        "resolved": 20,
+        "failures": []
+      },
+      "trial": 0
+    },
+    {
+      "id": "base-clean",
+      "description": "Harbour Joinery September 2026 as delivered. Clean ledger with four reviewer warnings: a new unmapped expense account, an unrecorded bank fee, an aged receivable and a small accrual-to-invoice difference.",
+      "state": "READY_FOR_REVIEW",
+      "state_ok": true,
+      "blocking_expected": [],
+      "blocking_raised": [],
+      "blocking_missed": [],
+      "unexpected_blocks": [],
+      "warnings_expected": 4,
+      "warnings_missed": [],
+      "commentary": {
+        "material_lines": 5,
+        "material_covered": 5,
+        "coverage": 1.0,
+        "numbers_checked": 27,
+        "numbers_traced": 27,
+        "numeric_faithfulness": 1.0,
+        "direction_checks": 6,
+        "direction_accuracy": 1.0,
+        "evidence_citations": 5,
+        "evidence_valid": 1.0,
+        "mean_explained_share": 0.9978
+      },
+      "commentary_issues": [],
+      "commentary_author": "rules-baseline",
+      "material_lines_ok": true,
+      "pack": {
+        "cells": 34,
+        "correct": 34,
+        "misses": []
+      },
+      "ties": {
+        "checked": 6,
+        "misses": []
+      },
+      "references": {
+        "references": 20,
+        "resolved": 20,
+        "failures": []
+      },
+      "labels": {
+        "driver_groups": 7,
+        "driver_hits": 3,
+        "forbidden_claims": 0,
+        "label_direction_checks": 5,
+        "label_direction_ok": 5,
+        "details": [
+          "pl.rev.contract: missed driver xero:invoice:INV-1042",
+          "pl.rev.contract: missed driver email:msg-bayside-0922",
+          "pl.cos.materials: missed driver xero:invoice:TC-88801",
+          "pl.cos.subcontractors: missed driver email:msg-sparky-0917"
+        ]
+      },
+      "mutation": {
+        "gold_blocking": [],
+        "gold_metrics": {
+          "material_lines": 5,
+          "material_covered": 5,
+          "coverage": 1.0,
+          "numbers_checked": 26,
+          "numbers_traced": 26,
+          "numeric_faithfulness": 1.0,
+          "direction_checks": 5,
+          "direction_accuracy": 1.0,
+          "evidence_citations": 9,
+          "evidence_valid": 1.0,
+          "mean_explained_share": 0.7978
+        },
+        "results": [
+          {
+            "mutation": "changed figure in text",
+            "expected_issue": "NUMBER_UNTRACEABLE",
+            "caught": true
+          },
+          {
+            "mutation": "flipped direction",
+            "expected_issue": "DIRECTION_WRONG",
+            "caught": true
+          },
+          {
+            "mutation": "dropped a material line",
+            "expected_issue": "MISSING_MATERIAL_LINE",
+            "caught": true
+          },
+          {
+            "mutation": "invented evidence id",
+            "expected_issue": "EVIDENCE_UNKNOWN",
+            "caught": true
+          },
+          {
+            "mutation": "driver amount not in evidence",
+            "expected_issue": "DRIVER_AMOUNT_UNSUPPORTED",
+            "caught": true
+          },
+          {
+            "mutation": "driver without evidence",
+            "expected_issue": "DRIVER_NO_EVIDENCE",
+            "caught": true
+          },
+          {
+            "mutation": "unknown pack line",
+            "expected_issue": "UNKNOWN_LINE",
+            "caught": true
+          },
+          {
+            "mutation": "wrong summary figure",
+            "expected_issue": "NUMBER_UNTRACEABLE",
+            "caught": true
+          },
+          {
+            "mutation": "hedged speculation",
+            "expected_issue": "SPECULATIVE_LANGUAGE",
+            "caught": true
+          },
+          {
+            "mutation": "inflated rounded figure",
+            "expected_issue": "NUMBER_UNTRACEABLE",
+            "caught": true
+          },
+          {
+            "mutation": "wrong direction in summary",
+            "expected_issue": "DIRECTION_WRONG",
+            "caught": true
+          },
+          {
+            "mutation": "missing summary",
+            "expected_issue": "NO_SUMMARY",
+            "caught": true
+          }
+        ],
+        "detected": 12,
+        "total": 12
+      },
+      "trial": 0
+    },
+    {
+      "id": "evidence-removed",
+      "description": "Hallucination probe: the Bayside email explaining why stage 2 was invoiced early is absent. Commentary may cite the invoice, but must not claim the client asked for it.",
+      "state": "READY_FOR_REVIEW",
+      "state_ok": true,
+      "blocking_expected": [],
+      "blocking_raised": [],
+      "blocking_missed": [],
+      "unexpected_blocks": [],
+      "warnings_expected": 1,
+      "warnings_missed": [],
+      "commentary": {
+        "material_lines": 5,
+        "material_covered": 5,
+        "coverage": 1.0,
+        "numbers_checked": 27,
+        "numbers_traced": 27,
+        "numeric_faithfulness": 1.0,
+        "direction_checks": 6,
+        "direction_accuracy": 1.0,
+        "evidence_citations": 5,
+        "evidence_valid": 1.0,
+        "mean_explained_share": 0.9978
+      },
+      "commentary_issues": [],
+      "commentary_author": "rules-baseline",
+      "references": {
+        "references": 20,
+        "resolved": 20,
+        "failures": []
+      },
+      "labels": {
+        "driver_groups": 1,
+        "driver_hits": 0,
+        "forbidden_claims": 0,
+        "label_direction_checks": 1,
+        "label_direction_ok": 1,
+        "details": [
+          "pl.rev.contract: missed driver xero:invoice:INV-1042"
+        ]
+      },
+      "trial": 0
+    },
+    {
+      "id": "missing-statement",
+      "description": "The bank statement was never saved to SharePoint. The bank reconciliation cannot be performed, so the run must block rather than guess.",
+      "state": "BLOCKED",
+      "state_ok": true,
+      "blocking_expected": [
+        "WP_SOURCE_MISSING"
+      ],
+      "blocking_raised": [
+        "WP_SOURCE_MISSING"
+      ],
+      "blocking_missed": [],
+      "unexpected_blocks": [],
+      "warnings_expected": 0,
+      "warnings_missed": [],
+      "commentary": {
+        "material_lines": 5,
+        "material_covered": 5,
+        "coverage": 1.0,
+        "numbers_checked": 27,
+        "numbers_traced": 27,
+        "numeric_faithfulness": 1.0,
+        "direction_checks": 6,
+        "direction_accuracy": 1.0,
+        "evidence_citations": 5,
+        "evidence_valid": 1.0,
+        "mean_explained_share": 0.9978
+      },
+      "commentary_issues": [],
+      "commentary_author": "rules-baseline",
+      "references": {
+        "references": 16,
+        "resolved": 16,
+        "failures": []
+      },
+      "trial": 0
+    },
+    {
+      "id": "missing-support",
+      "description": "The audit fee invoice supporting accrual ACC-03 is missing. The accrual still ties to the ledger, so this is a reviewer warning, not a block.",
+      "state": "READY_FOR_REVIEW",
+      "state_ok": true,
+      "blocking_expected": [],
+      "blocking_raised": [],
+      "blocking_missed": [],
+      "unexpected_blocks": [],
+      "warnings_expected": 1,
+      "warnings_missed": [],
+      "commentary": {
+        "material_lines": 5,
+        "material_covered": 5,
+        "coverage": 1.0,
+        "numbers_checked": 27,
+        "numbers_traced": 27,
+        "numeric_faithfulness": 1.0,
+        "direction_checks": 6,
+        "direction_accuracy": 1.0,
+        "evidence_citations": 5,
+        "evidence_valid": 1.0,
+        "mean_explained_share": 0.9978
+      },
+      "commentary_issues": [],
+      "commentary_author": "rules-baseline",
+      "references": {
+        "references": 18,
+        "resolved": 18,
+        "failures": []
+      },
+      "trial": 0
+    },
+    {
+      "id": "receivables-mismatch",
+      "description": "A 2,000 manual journal debits receivables and credits revenue with no invoice behind it. Receivables no longer agree to open invoices; must block.",
+      "state": "BLOCKED",
+      "state_ok": true,
+      "blocking_expected": [
+        "RECEIVABLES_DO_NOT_TIE"
+      ],
+      "blocking_raised": [
+        "RECEIVABLES_DO_NOT_TIE"
+      ],
+      "blocking_missed": [],
+      "unexpected_blocks": [],
+      "warnings_expected": 0,
+      "warnings_missed": [],
+      "commentary": {
+        "material_lines": 5,
+        "material_covered": 5,
+        "coverage": 1.0,
+        "numbers_checked": 27,
+        "numbers_traced": 27,
+        "numeric_faithfulness": 1.0,
+        "direction_checks": 6,
+        "direction_accuracy": 1.0,
+        "evidence_citations": 5,
+        "evidence_valid": 1.0,
+        "mean_explained_share": 0.9978
+      },
+      "commentary_issues": [],
+      "commentary_author": "rules-baseline",
+      "references": {
+        "references": 20,
+        "resolved": 20,
+        "failures": []
+      },
+      "trial": 0
+    },
+    {
+      "id": "tb-out-of-balance",
+      "description": "A one-sided 100 debit to rent: the trial balance no longer balances. Must block.",
+      "state": "BLOCKED",
+      "state_ok": true,
+      "blocking_expected": [
+        "BS_DOES_NOT_BALANCE",
+        "TB_OUT_OF_BALANCE"
+      ],
+      "blocking_raised": [
+        "BS_DOES_NOT_BALANCE",
+        "TB_OUT_OF_BALANCE"
+      ],
+      "blocking_missed": [],
+      "unexpected_blocks": [],
+      "warnings_expected": 0,
+      "warnings_missed": [],
+      "commentary": {
+        "material_lines": 5,
+        "material_covered": 5,
+        "coverage": 1.0,
+        "numbers_checked": 27,
+        "numbers_traced": 27,
+        "numeric_faithfulness": 1.0,
+        "direction_checks": 6,
+        "direction_accuracy": 1.0,
+        "evidence_citations": 5,
+        "evidence_valid": 1.0,
+        "mean_explained_share": 0.9978
+      },
+      "commentary_issues": [],
+      "commentary_author": "rules-baseline",
+      "references": {
+        "references": 20,
+        "resolved": 20,
+        "failures": []
+      },
+      "trial": 0
+    },
+    {
+      "id": "unmapped-account",
+      "description": "A suspense account (code SUSP) with a 1,250 debit appears in the ledger. It matches no mapping line or range, so the pack cannot be complete and must not reach review.",
+      "state": "BLOCKED",
+      "state_ok": true,
+      "blocking_expected": [
+        "BS_DOES_NOT_BALANCE",
+        "MAP_MISSING",
+        "PACK_MONTH_PROFIT_MISMATCH",
+        "PACK_YTD_PROFIT_MISMATCH"
+      ],
+      "blocking_raised": [
+        "BS_DOES_NOT_BALANCE",
+        "MAP_MISSING",
+        "PACK_MONTH_PROFIT_MISMATCH",
+        "PACK_YTD_PROFIT_MISMATCH"
+      ],
+      "blocking_missed": [],
+      "unexpected_blocks": [],
+      "warnings_expected": 1,
+      "warnings_missed": [],
+      "commentary": {
+        "material_lines": 5,
+        "material_covered": 5,
+        "coverage": 1.0,
+        "numbers_checked": 27,
+        "numbers_traced": 27,
+        "numeric_faithfulness": 1.0,
+        "direction_checks": 6,
+        "direction_accuracy": 1.0,
+        "evidence_citations": 5,
+        "evidence_valid": 1.0,
+        "mean_explained_share": 0.9978
+      },
+      "commentary_issues": [],
+      "commentary_author": "rules-baseline",
+      "references": {
+        "references": 20,
+        "resolved": 20,
+        "failures": []
+      },
+      "trial": 0
+    }
+  ]
+}

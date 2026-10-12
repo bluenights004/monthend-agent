@@ -1,0 +1,39 @@
+{
+  "summary": "Net profit before tax for September 2026 was AUD 14,435 against a budget of AUD 5,083, ahead of budget by AUD 9,352. Revenue was AUD 21,700 above budget, mainly because Bayside Medical's stage 2 progress claim was invoiced in September at the client's request; higher materials, the annual accounts and tax fee and new equipment hire partly offset this.",
+  "author": "reviewer-approved reference",
+  "items": [
+    {
+      "line_key": "pl.rev.contract",
+      "text": "Fitout contract revenue was AUD 182,400 against a budget of AUD 160,000, a favourable variance of AUD 22,400 (14.0%). Bayside Medical Centre asked for its stage 2 progress claim to be issued in September rather than October, so INV-1042 for AUD 60,000 was billed this month. October revenue will be correspondingly lower than budget.",
+      "drivers": [{"description": "Bayside Medical stage 2 progress claim invoiced in September instead of October", "amount": 60000, "evidence": ["xero:invoice:INV-1042", "email:msg-bayside-0922"]}],
+      "follow_up": []
+    },
+    {
+      "line_key": "pl.cos.materials",
+      "text": "Materials were AUD 61,850 against a budget of AUD 52,000, an unfavourable variance of AUD 9,850 (18.9%). Two things drove this: AUD 19,850 of laminate and hardware bought for the Bayside Medical stage 2 job, which moved into September with the revenue (TC-88801), and Timberco's 8% price increase on hardwood and board from 1 September, reflected in the AUD 28,400 general stock invoice (TC-88790).",
+      "drivers": [
+        {"description": "Materials for Bayside Medical stage 2 bought in September", "amount": 19850, "evidence": ["xero:invoice:TC-88801"]},
+        {"description": "Timberco 8% price increase on hardwood and board", "amount": 28400, "evidence": ["xero:invoice:TC-88790", "email:msg-timberco-0820"]}
+      ],
+      "follow_up": []
+    },
+    {
+      "line_key": "pl.cos.subcontractors",
+      "text": "Subcontractor costs were AUD 28,300 against a budget of AUD 34,000, a favourable variance of AUD 5,700 (16.8%). The Coastal Dental electrical rough-in moved to 6 October at the builder's request, so that work will be billed in October. This is a timing difference rather than a saving.",
+      "drivers": [{"description": "Coastal Dental electrical rough-in deferred to October", "amount": null, "evidence": ["email:msg-sparky-0917"]}],
+      "follow_up": ["Please confirm the value of the Coastal Dental rough-in so October can be forecast."]
+    },
+    {
+      "line_key": "pl.opex.admin",
+      "text": "Administration and professional fees were AUD 8,198 against a budget of AUD 3,850, an unfavourable variance of AUD 4,348 (112.9%). This is almost entirely the AUD 4,300 accrual for the FY2026 financial statements and tax return from Pinnacle Audit & Advisory (invoice PA-7781, received in October). It is an annual cost and should not recur next month.",
+      "drivers": [{"description": "FY2026 financial statements and tax return fee accrued", "amount": 4300, "evidence": ["wp:B1:B1.3", "doc:inv-pinnacle-PA-7781#p1:L6"]}],
+      "follow_up": []
+    },
+    {
+      "line_key": "pl.opex.other",
+      "text": "Other operating expenses were AUD 4,600 against a nil budget. This is scissor lift and access equipment hire for the Bayside Medical job (Hire-It Equipment, HI-5521), coded to a new Equipment Hire account opened in September. Because it relates to a specific job, we suggest coding it to cost of sales.",
+      "drivers": [{"description": "Equipment hire for the Bayside Medical job", "amount": 4600, "evidence": ["xero:invoice:HI-5521"]}],
+      "follow_up": ["Should equipment hire for specific jobs be coded to cost of sales?"]
+    }
+  ]
+}

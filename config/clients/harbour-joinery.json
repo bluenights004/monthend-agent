@@ -1,0 +1,38 @@
+{
+  "client_id": "harbour-joinery",
+  "name": "Harbour Joinery Pty Ltd",
+  "currency": "AUD",
+  "fy_start_month": 7,
+  "source": {
+    "backend": "fixtures",
+    "fixtures_dir": "fixtures/harbour-joinery",
+    "xero_tenant_id": "",
+    "sharepoint_folder": "Clients/Harbour Joinery/{period}",
+    "mailbox": "finance@yourfirm.example"
+  },
+  "mapping": "config/mappings/standard-au.json",
+  "template": "templates/management-pack.xlsx",
+  "materiality": {
+    "abs_threshold": "5000",
+    "abs_floor": "2000",
+    "pct_threshold": "10",
+    "bank_rec_tolerance": "1.00",
+    "accrual_support_tolerance": "100.00",
+    "receivables_overdue_days": 60
+  },
+  "workpapers": [
+    {"code": "A1", "kind": "bank_reconciliation", "account": "090", "pack_line": "bs.cash", "title": "Bank reconciliation - Business Bank Account",
+     "options": {"statement": "bank-statement-090-{period}.pdf"}},
+    {"code": "B1", "kind": "accruals", "account": "830", "pack_line": "bs.accruals", "title": "Accrued expenses",
+     "options": {"schedule": "accruals-schedule-{period}.csv"}},
+    {"code": "C1", "kind": "receivables", "account": "610", "pack_line": "bs.receivables", "title": "Trade receivables and ageing"}
+  ],
+  "reviewers": ["Alex Reviewer", "Sam Manager"],
+  "delivery": {
+    "mode": "draft",
+    "to": ["director@harbourjoinery.example"],
+    "cc": [],
+    "subject": "Harbour Joinery - management accounts {period_label}",
+    "sharepoint_upload_folder": "Clients/Harbour Joinery/{period}/Issued"
+  }
+}

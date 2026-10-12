@@ -1,0 +1,12 @@
+{
+  "id": "bank-rec-difference",
+  "description": "Xero cash is 500 higher than the bank statement can explain (balanced against retained earnings so the TB still balances). The bank reconciliation must show a 500 unexplained difference and block.",
+  "client": "harbour-joinery",
+  "period": "2026-09",
+  "overlays": [
+    {"op": "tb_adjust", "code": "090", "name": "Business Bank Account", "section": "Assets", "month": "500", "ytd": "500"},
+    {"op": "tb_adjust", "code": "960", "name": "Retained Earnings", "section": "Equity", "month": "-500", "ytd": "-500"}
+  ],
+  "expect": {"state": "BLOCKED", "blocking_codes": ["BANKREC_UNEXPLAINED"], "warning_codes": ["BANKREC_UNRECORDED_ITEMS"],
+             "ties": {"A1": {"tb": "45272.50"}}}
+}

@@ -1,0 +1,129 @@
+{
+  "BankTransactions": [
+    {
+      "BankTransactionID": "e6a1fb77-161f-599e-8ba1-4c64a15db83c",
+      "Type": "RECEIVE",
+      "Contact": {
+        "Name": "Westend Physio"
+      },
+      "DateString": "2026-09-18T00:00:00",
+      "Reference": "INV-1040",
+      "IsReconciled": true,
+      "Status": "AUTHORISED",
+      "BankAccount": {
+        "AccountID": "2517a844-c00e-51e4-a560-ce7374e74cfe",
+        "Code": "090",
+        "Name": "Business Bank Account"
+      },
+      "LineItems": [
+        {
+          "Description": "Receipt INV-1040",
+          "AccountCode": "200",
+          "LineAmount": 107140.0
+        }
+      ],
+      "Total": 107140.0,
+      "CurrencyCode": "AUD"
+    },
+    {
+      "BankTransactionID": "662d392d-4a49-57ef-8724-fd032129b3ad",
+      "Type": "SPEND",
+      "Contact": {
+        "Name": "Timberco Pty Ltd"
+      },
+      "DateString": "2026-09-22T00:00:00",
+      "Reference": "TC-88790",
+      "IsReconciled": true,
+      "Status": "AUTHORISED",
+      "BankAccount": {
+        "AccountID": "2517a844-c00e-51e4-a560-ce7374e74cfe",
+        "Code": "090",
+        "Name": "Business Bank Account"
+      },
+      "LineItems": [
+        {
+          "Description": "Payment TC-88790",
+          "AccountCode": "800",
+          "LineAmount": 31240.0
+        }
+      ],
+      "Total": 31240.0,
+      "CurrencyCode": "AUD"
+    },
+    {
+      "BankTransactionID": "3340c233-207e-5769-bf4e-d89dc41d35fc",
+      "Type": "SPEND",
+      "Contact": {
+        "Name": "Harbour Joinery payroll"
+      },
+      "DateString": "2026-09-25T00:00:00",
+      "Reference": "PAY-0925",
+      "IsReconciled": true,
+      "Status": "AUTHORISED",
+      "BankAccount": {
+        "AccountID": "2517a844-c00e-51e4-a560-ce7374e74cfe",
+        "Code": "090",
+        "Name": "Business Bank Account"
+      },
+      "LineItems": [
+        {
+          "Description": "Fortnightly payroll",
+          "AccountCode": "477",
+          "LineAmount": 41850.0
+        }
+      ],
+      "Total": 41850.0,
+      "CurrencyCode": "AUD"
+    },
+    {
+      "BankTransactionID": "5626608a-1989-5519-966f-0c2ead3b13f9",
+      "Type": "SPEND",
+      "Contact": {
+        "Name": "Sparky Bros Electrical"
+      },
+      "DateString": "2026-09-30T00:00:00",
+      "Reference": "SB-E2195",
+      "IsReconciled": false,
+      "Status": "AUTHORISED",
+      "BankAccount": {
+        "AccountID": "2517a844-c00e-51e4-a560-ce7374e74cfe",
+        "Code": "090",
+        "Name": "Business Bank Account"
+      },
+      "LineItems": [
+        {
+          "Description": "Part payment SB-E2195 (EFT 30 Sep)",
+          "AccountCode": "800",
+          "LineAmount": 6420.0
+        }
+      ],
+      "Total": 6420.0,
+      "CurrencyCode": "AUD"
+    },
+    {
+      "BankTransactionID": "d357ddd9-a68d-526f-b61f-b530b2594931",
+      "Type": "RECEIVE",
+      "Contact": {
+        "Name": "Northside Cafe Co"
+      },
+      "DateString": "2026-09-30T00:00:00",
+      "Reference": "DEP-0930",
+      "IsReconciled": false,
+      "Status": "AUTHORISED",
+      "BankAccount": {
+        "AccountID": "2517a844-c00e-51e4-a560-ce7374e74cfe",
+        "Code": "090",
+        "Name": "Business Bank Account"
+      },
+      "LineItems": [
+        {
+          "Description": "Counter deposit - banked 1 Oct",
+          "AccountCode": "610",
+          "LineAmount": 3300.0
+        }
+      ],
+      "Total": 3300.0,
+      "CurrencyCode": "AUD"
+    }
+  ]
+}

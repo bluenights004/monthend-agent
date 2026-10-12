@@ -1,0 +1,340 @@
+{
+  "Invoices": [
+    {
+      "InvoiceID": "886eb840-ae98-5117-a5ae-25a0c606e72e",
+      "InvoiceNumber": "INV-1042",
+      "Reference": "BMC-PC2",
+      "Type": "ACCREC",
+      "Contact": {
+        "ContactID": "84d5d6e0-62a7-5f0e-a379-3884778f4af9",
+        "Name": "Bayside Medical Centre"
+      },
+      "DateString": "2026-09-26T00:00:00",
+      "DueDateString": "2026-10-26T00:00:00",
+      "Status": "AUTHORISED",
+      "LineAmountTypes": "Exclusive",
+      "LineItems": [
+        {
+          "Description": "Fitout stage 2 - joinery and partitions (per progress claim 2)",
+          "AccountCode": "200",
+          "LineAmount": 60000.0,
+          "TaxType": "OUTPUT"
+        }
+      ],
+      "SubTotal": 60000.0,
+      "TotalTax": 6000.0,
+      "Total": 66000.0,
+      "AmountPaid": 0.0,
+      "AmountDue": 66000.0,
+      "CurrencyCode": "AUD"
+    },
+    {
+      "InvoiceID": "ba62c2a6-26f8-5bb1-bc0d-bfc0c2254205",
+      "InvoiceNumber": "INV-1039",
+      "Reference": "",
+      "Type": "ACCREC",
+      "Contact": {
+        "ContactID": "5b79c6e8-8485-5937-840e-f22c3ae75e09",
+        "Name": "Coastal Dental Group"
+      },
+      "DateString": "2026-09-12T00:00:00",
+      "DueDateString": "2026-10-12T00:00:00",
+      "Status": "AUTHORISED",
+      "LineAmountTypes": "Exclusive",
+      "LineItems": [
+        {
+          "Description": "Surgery fitout - progress claim 1",
+          "AccountCode": "200",
+          "LineAmount": 25000.0,
+          "TaxType": "OUTPUT"
+        }
+      ],
+      "SubTotal": 25000.0,
+      "TotalTax": 2500.0,
+      "Total": 27500.0,
+      "AmountPaid": 0.0,
+      "AmountDue": 27500.0,
+      "CurrencyCode": "AUD"
+    },
+    {
+      "InvoiceID": "bf95e41c-fffa-5d69-bb4c-c9094bd2801b",
+      "InvoiceNumber": "INV-1035",
+      "Reference": "",
+      "Type": "ACCREC",
+      "Contact": {
+        "ContactID": "d39fe2a8-a014-5a10-be84-1e6e9f214dc2",
+        "Name": "Northside Cafe Co"
+      },
+      "DateString": "2026-08-28T00:00:00",
+      "DueDateString": "2026-09-27T00:00:00",
+      "Status": "AUTHORISED",
+      "LineAmountTypes": "Exclusive",
+      "LineItems": [
+        {
+          "Description": "Counter and shelving fitout",
+          "AccountCode": "200",
+          "LineAmount": 13500.0,
+          "TaxType": "OUTPUT"
+        }
+      ],
+      "SubTotal": 13500.0,
+      "TotalTax": 1350.0,
+      "Total": 14850.0,
+      "AmountPaid": 0.0,
+      "AmountDue": 14850.0,
+      "CurrencyCode": "AUD"
+    },
+    {
+      "InvoiceID": "cf5cd3f5-477f-5245-b9ec-ca108c7b7b50",
+      "InvoiceNumber": "INV-1027",
+      "Reference": "",
+      "Type": "ACCREC",
+      "Contact": {
+        "ContactID": "53feb001-6701-5c9b-98d4-f2ace8fbecfb",
+        "Name": "Marina Apartments Body Corporate"
+      },
+      "DateString": "2026-07-30T00:00:00",
+      "DueDateString": "2026-08-29T00:00:00",
+      "Status": "AUTHORISED",
+      "LineAmountTypes": "Exclusive",
+      "LineItems": [
+        {
+          "Description": "Lobby joinery - supply and install",
+          "AccountCode": "210",
+          "LineAmount": 9500.0,
+          "TaxType": "OUTPUT"
+        }
+      ],
+      "SubTotal": 9500.0,
+      "TotalTax": 950.0,
+      "Total": 10450.0,
+      "AmountPaid": 0.0,
+      "AmountDue": 10450.0,
+      "CurrencyCode": "AUD"
+    },
+    {
+      "InvoiceID": "f5c49135-c923-5464-b89a-3f6cd7f3f40d",
+      "InvoiceNumber": "INV-1040",
+      "Reference": "",
+      "Type": "ACCREC",
+      "Contact": {
+        "ContactID": "34295348-6868-5b67-bbfe-6b655b6206eb",
+        "Name": "Westend Physio"
+      },
+      "DateString": "2026-09-15T00:00:00",
+      "DueDateString": "2026-10-15T00:00:00",
+      "Status": "PAID",
+      "LineAmountTypes": "Exclusive",
+      "LineItems": [
+        {
+          "Description": "Clinic fitout - practical completion",
+          "AccountCode": "200",
+          "LineAmount": 97400.0,
+          "TaxType": "OUTPUT"
+        }
+      ],
+      "SubTotal": 97400.0,
+      "TotalTax": 9740.0,
+      "Total": 107140.0,
+      "AmountPaid": 107140.0,
+      "AmountDue": 0.0,
+      "CurrencyCode": "AUD"
+    },
+    {
+      "InvoiceID": "ac18d2ce-0645-5555-a95f-9b9d27bc3e92",
+      "InvoiceNumber": "INV-1041",
+      "Reference": "",
+      "Type": "ACCREC",
+      "Contact": {
+        "ContactID": "56731c1d-e847-5c21-9dd1-85cd4970131c",
+        "Name": "Various retail customers"
+      },
+      "DateString": "2026-09-30T00:00:00",
+      "DueDateString": "2026-09-30T00:00:00",
+      "Status": "PAID",
+      "LineAmountTypes": "Exclusive",
+      "LineItems": [
+        {
+          "Description": "Joinery product sales - September",
+          "AccountCode": "210",
+          "LineAmount": 21300.0,
+          "TaxType": "OUTPUT"
+        }
+      ],
+      "SubTotal": 21300.0,
+      "TotalTax": 2130.0,
+      "Total": 23430.0,
+      "AmountPaid": 23430.0,
+      "AmountDue": 0.0,
+      "CurrencyCode": "AUD"
+    },
+    {
+      "InvoiceID": "310df58a-e7ca-50fa-b218-0d9fd03c93c2",
+      "InvoiceNumber": "TC-88790",
+      "Reference": "",
+      "Type": "ACCPAY",
+      "Contact": {
+        "ContactID": "ad0fe759-f10f-5711-9719-8f7e5ee7a305",
+        "Name": "Timberco Pty Ltd"
+      },
+      "DateString": "2026-09-08T00:00:00",
+      "DueDateString": "2026-10-08T00:00:00",
+      "Status": "PAID",
+      "LineAmountTypes": "Exclusive",
+      "LineItems": [
+        {
+          "Description": "Hardwood and board - general stock (incl. 8% price increase)",
+          "AccountCode": "310",
+          "LineAmount": 28400.0,
+          "TaxType": "INPUT"
+        }
+      ],
+      "SubTotal": 28400.0,
+      "TotalTax": 2840.0,
+      "Total": 31240.0,
+      "AmountPaid": 31240.0,
+      "AmountDue": 0.0,
+      "CurrencyCode": "AUD"
+    },
+    {
+      "InvoiceID": "cc04e5ac-5c24-5541-90e9-a3983f24d6d9",
+      "InvoiceNumber": "TC-88801",
+      "Reference": "",
+      "Type": "ACCPAY",
+      "Contact": {
+        "ContactID": "ad0fe759-f10f-5711-9719-8f7e5ee7a305",
+        "Name": "Timberco Pty Ltd"
+      },
+      "DateString": "2026-09-19T00:00:00",
+      "DueDateString": "2026-10-19T00:00:00",
+      "Status": "AUTHORISED",
+      "LineAmountTypes": "Exclusive",
+      "LineItems": [
+        {
+          "Description": "Bayside Medical stage 2 - laminate and hardware",
+          "AccountCode": "310",
+          "LineAmount": 19850.0,
+          "TaxType": "INPUT"
+        }
+      ],
+      "SubTotal": 19850.0,
+      "TotalTax": 1985.0,
+      "Total": 21835.0,
+      "AmountPaid": 0.0,
+      "AmountDue": 21835.0,
+      "CurrencyCode": "AUD"
+    },
+    {
+      "InvoiceID": "51c73999-867c-53c8-b07e-a0f2e5c8cbb2",
+      "InvoiceNumber": "VS-0912",
+      "Reference": "",
+      "Type": "ACCPAY",
+      "Contact": {
+        "ContactID": "5a62d236-c08f-574f-a55d-bec5d4e3336d",
+        "Name": "Various suppliers"
+      },
+      "DateString": "2026-09-30T00:00:00",
+      "DueDateString": "2026-10-30T00:00:00",
+      "Status": "PAID",
+      "LineAmountTypes": "Exclusive",
+      "LineItems": [
+        {
+          "Description": "Consumables and fixings - September",
+          "AccountCode": "310",
+          "LineAmount": 6750.0,
+          "TaxType": "INPUT"
+        }
+      ],
+      "SubTotal": 6750.0,
+      "TotalTax": 675.0,
+      "Total": 7425.0,
+      "AmountPaid": 7425.0,
+      "AmountDue": 0.0,
+      "CurrencyCode": "AUD"
+    },
+    {
+      "InvoiceID": "95a9693f-58da-52c6-9b33-92cf12cce68d",
+      "InvoiceNumber": "SB-E2195",
+      "Reference": "",
+      "Type": "ACCPAY",
+      "Contact": {
+        "ContactID": "fbeb6f9a-6cf3-5a62-8089-51ccb9fe36fa",
+        "Name": "Sparky Bros Electrical"
+      },
+      "DateString": "2026-09-10T00:00:00",
+      "DueDateString": "2026-10-10T00:00:00",
+      "Status": "PAID",
+      "LineAmountTypes": "Exclusive",
+      "LineItems": [
+        {
+          "Description": "Westend Physio electrical - final",
+          "AccountCode": "320",
+          "LineAmount": 9800.0,
+          "TaxType": "INPUT"
+        }
+      ],
+      "SubTotal": 9800.0,
+      "TotalTax": 980.0,
+      "Total": 10780.0,
+      "AmountPaid": 10780.0,
+      "AmountDue": 0.0,
+      "CurrencyCode": "AUD"
+    },
+    {
+      "InvoiceID": "4ef39dee-3a9b-5f36-a3d2-4cb4586bc49b",
+      "InvoiceNumber": "FW-3318",
+      "Reference": "",
+      "Type": "ACCPAY",
+      "Contact": {
+        "ContactID": "820df914-9c42-5d53-81d0-f7f49abbe857",
+        "Name": "FormWorks Plastering"
+      },
+      "DateString": "2026-09-24T00:00:00",
+      "DueDateString": "2026-10-24T00:00:00",
+      "Status": "AUTHORISED",
+      "LineAmountTypes": "Exclusive",
+      "LineItems": [
+        {
+          "Description": "Bayside Medical stage 2 - partitions and set",
+          "AccountCode": "320",
+          "LineAmount": 15300.0,
+          "TaxType": "INPUT"
+        }
+      ],
+      "SubTotal": 15300.0,
+      "TotalTax": 1530.0,
+      "Total": 16830.0,
+      "AmountPaid": 0.0,
+      "AmountDue": 16830.0,
+      "CurrencyCode": "AUD"
+    },
+    {
+      "InvoiceID": "c759b83b-66ef-5da3-be4a-859d8356e577",
+      "InvoiceNumber": "HI-5521",
+      "Reference": "",
+      "Type": "ACCPAY",
+      "Contact": {
+        "ContactID": "6157b155-784b-5555-8112-f4a998d94278",
+        "Name": "Hire-It Equipment"
+      },
+      "DateString": "2026-09-14T00:00:00",
+      "DueDateString": "2026-10-14T00:00:00",
+      "Status": "AUTHORISED",
+      "LineAmountTypes": "Exclusive",
+      "LineItems": [
+        {
+          "Description": "Scissor lift and access equipment hire - Bayside Medical, 14-30 Sep",
+          "AccountCode": "466",
+          "LineAmount": 4600.0,
+          "TaxType": "INPUT"
+        }
+      ],
+      "SubTotal": 4600.0,
+      "TotalTax": 460.0,
+      "Total": 5060.0,
+      "AmountPaid": 0.0,
+      "AmountDue": 5060.0,
+      "CurrencyCode": "AUD"
+    }
+  ]
+}

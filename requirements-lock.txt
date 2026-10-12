@@ -1,0 +1,10 @@
+# Versions this release was tested with (Python 3.13, macOS). Install with:
+#   python -m pip install -r requirements-lock.txt && python -m pip install -e .
+openpyxl==3.1.5
+pypdf==6.20.0
+pydantic==2.14.0
+mcp==1.30.0
+httpx==0.28.1
+anthropic==1.13.0
+claude-agent-sdk==0.2.165
+pytest==9.1.1

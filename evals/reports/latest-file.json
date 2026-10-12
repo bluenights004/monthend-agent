@@ -1,0 +1,160 @@
+{
+  "engine": "evals/cases/base-clean.gold-commentary.json",
+  "summary": {
+    "metrics": {
+      "cases": 1,
+      "state_accuracy": 1.0,
+      "blocking_recall": 1.0,
+      "false_blocks": 0,
+      "warning_recall": 1.0,
+      "pack_cell_accuracy": 1.0,
+      "tie_accuracy": 1.0,
+      "reference_integrity": 1.0,
+      "commentary_coverage": 1.0,
+      "numeric_faithfulness": 1.0,
+      "direction_accuracy": 1.0,
+      "evidence_validity": 1.0,
+      "driver_recall": 1.0,
+      "forbidden_claims": 0,
+      "validator_mutation_detection": 1.0,
+      "validator_gold_false_positives": 0
+    },
+    "failures": [],
+    "passed": true
+  },
+  "results": [
+    {
+      "id": "base-clean",
+      "description": "Harbour Joinery September 2026 as delivered. Clean ledger with four reviewer warnings: a new unmapped expense account, an unrecorded bank fee, an aged receivable and a small accrual-to-invoice difference.",
+      "state": "READY_FOR_REVIEW",
+      "state_ok": true,
+      "blocking_expected": [],
+      "blocking_raised": [],
+      "blocking_missed": [],
+      "unexpected_blocks": [],
+      "warnings_expected": 4,
+      "warnings_missed": [],
+      "commentary": {
+        "material_lines": 5,
+        "material_covered": 5,
+        "coverage": 1.0,
+        "numbers_checked": 26,
+        "numbers_traced": 26,
+        "numeric_faithfulness": 1.0,
+        "direction_checks": 5,
+        "direction_accuracy": 1.0,
+        "evidence_citations": 9,
+        "evidence_valid": 1.0,
+        "mean_explained_share": 0.7978
+      },
+      "commentary_issues": [
+        "warn: Quantified drivers explain 0% of the variance on 'Subcontractors'."
+      ],
+      "commentary_author": "reviewer-approved reference",
+      "material_lines_ok": true,
+      "pack": {
+        "cells": 34,
+        "correct": 34,
+        "misses": []
+      },
+      "ties": {
+        "checked": 6,
+        "misses": []
+      },
+      "references": {
+        "references": 20,
+        "resolved": 20,
+        "failures": []
+      },
+      "labels": {
+        "driver_groups": 7,
+        "driver_hits": 7,
+        "forbidden_claims": 0,
+        "label_direction_checks": 5,
+        "label_direction_ok": 5,
+        "details": []
+      },
+      "mutation": {
+        "gold_blocking": [],
+        "gold_metrics": {
+          "material_lines": 5,
+          "material_covered": 5,
+          "coverage": 1.0,
+          "numbers_checked": 26,
+          "numbers_traced": 26,
+          "numeric_faithfulness": 1.0,
+          "direction_checks": 5,
+          "direction_accuracy": 1.0,
+          "evidence_citations": 9,
+          "evidence_valid": 1.0,
+          "mean_explained_share": 0.7978
+        },
+        "results": [
+          {
+            "mutation": "changed figure in text",
+            "expected_issue": "NUMBER_UNTRACEABLE",
+            "caught": true
+          },
+          {
+            "mutation": "flipped direction",
+            "expected_issue": "DIRECTION_WRONG",
+            "caught": true
+          },
+          {
+            "mutation": "dropped a material line",
+            "expected_issue": "MISSING_MATERIAL_LINE",
+            "caught": true
+          },
+          {
+            "mutation": "invented evidence id",
+            "expected_issue": "EVIDENCE_UNKNOWN",
+            "caught": true
+          },
+          {
+            "mutation": "driver amount not in evidence",
+            "expected_issue": "DRIVER_AMOUNT_UNSUPPORTED",
+            "caught": true
+          },
+          {
+            "mutation": "driver without evidence",
+            "expected_issue": "DRIVER_NO_EVIDENCE",
+            "caught": true
+          },
+          {
+            "mutation": "unknown pack line",
+            "expected_issue": "UNKNOWN_LINE",
+            "caught": true
+          },
+          {
+            "mutation": "wrong summary figure",
+            "expected_issue": "NUMBER_UNTRACEABLE",
+            "caught": true
+          },
+          {
+            "mutation": "hedged speculation",
+            "expected_issue": "SPECULATIVE_LANGUAGE",
+            "caught": true
+          },
+          {
+            "mutation": "inflated rounded figure",
+            "expected_issue": "NUMBER_UNTRACEABLE",
+            "caught": true
+          },
+          {
+            "mutation": "wrong direction in summary",
+            "expected_issue": "DIRECTION_WRONG",
+            "caught": true
+          },
+          {
+            "mutation": "missing summary",
+            "expected_issue": "NO_SUMMARY",
+            "caught": true
+          }
+        ],
+        "detected": 12,
+        "total": 12
+      },
+      "trial": 0
+    }
+  ]
+}

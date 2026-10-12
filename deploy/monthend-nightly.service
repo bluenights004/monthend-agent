@@ -1,0 +1,15 @@
+# systemd (Linux server). Install both files in /etc/systemd/system/, then:
+#   systemctl daemon-reload && systemctl enable --now monthend-nightly.timer
+[Unit]
+Description=Month-end agent overnight run
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=monthend
+WorkingDirectory=/srv/monthend-agent
+EnvironmentFile=/etc/monthend/env
+Environment=MONTHEND_MODE=operate
+ExecStart=/srv/monthend-agent/.venv/bin/python -m monthend nightly
+TimeoutStartSec=3h

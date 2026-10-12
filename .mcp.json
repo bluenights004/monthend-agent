@@ -1,0 +1,28 @@
+{
+  "mcpServers": {
+    "monthend": {
+      "type": "stdio",
+      "command": "${CLAUDE_PROJECT_DIR:-.}/.venv/bin/python",
+      "args": ["-m", "monthend.mcp_servers.monthend_server"],
+      "env": {"MONTHEND_AGENT_SESSION": "mcp"}
+    },
+    "xero": {
+      "type": "stdio",
+      "command": "${CLAUDE_PROJECT_DIR:-.}/.venv/bin/python",
+      "args": ["-m", "monthend.mcp_servers.xero_server"],
+      "env": {"MONTHEND_AGENT_SESSION": "mcp"}
+    },
+    "m365": {
+      "type": "stdio",
+      "command": "${CLAUDE_PROJECT_DIR:-.}/.venv/bin/python",
+      "args": ["-m", "monthend.mcp_servers.m365_server"],
+      "env": {"MONTHEND_AGENT_SESSION": "mcp"}
+    },
+    "datastore": {
+      "type": "stdio",
+      "command": "${CLAUDE_PROJECT_DIR:-.}/.venv/bin/python",
+      "args": ["-m", "monthend.mcp_servers.datastore_server"],
+      "env": {"MONTHEND_AGENT_SESSION": "mcp"}
+    }
+  }
+}

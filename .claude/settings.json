@@ -1,0 +1,66 @@
+{
+  "env": {
+    "MONTHEND_AGENT_SESSION": "claude-code"
+  },
+  "permissions": {
+    "allow": [
+      "mcp__monthend__list_configured_clients",
+      "mcp__monthend__get_run_status",
+      "mcp__monthend__get_pack",
+      "mcp__monthend__get_variance_context",
+      "mcp__monthend__get_workpapers",
+      "mcp__monthend__list_documents",
+      "mcp__monthend__read_document",
+      "mcp__monthend__resolve_evidence",
+      "mcp__monthend__validate_saved_commentary",
+      "mcp__xero__xero_get_organisation",
+      "mcp__xero__xero_list_accounts",
+      "mcp__xero__xero_get_trial_balance",
+      "mcp__xero__xero_get_budget",
+      "mcp__xero__xero_list_invoices",
+      "mcp__xero__xero_list_bank_transactions",
+      "mcp__m365__outlook_search_messages",
+      "mcp__m365__sharepoint_list_client_documents",
+      "mcp__m365__excel_read_range",
+      "mcp__datastore__list_runs",
+      "mcp__datastore__get_review_history",
+      "mcp__datastore__get_audit_events",
+      "mcp__datastore__get_validation_report",
+      "mcp__datastore__verify_audit_log",
+      "Bash(.venv/bin/python -m monthend runs *)",
+      "Bash(.venv/bin/python -m monthend eval *)",
+      "Bash(.venv/bin/python -m pytest *)"
+    ],
+    "ask": [
+      "mcp__monthend__prepare_run",
+      "mcp__monthend__finalise_run",
+      "mcp__m365__deliver_approved_pack"
+    ],
+    "deny": [
+      "Bash(monthend review approve *)",
+      "Bash(monthend review request-changes *)",
+      "Bash(monthend release *)",
+      "Bash(.venv/bin/python -m monthend review approve *)",
+      "Bash(.venv/bin/python -m monthend review request-changes *)",
+      "Bash(.venv/bin/python -m monthend release *)",
+      "Read(./.env)",
+      "Read(./var/secrets/**)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {"hooks": [{"type": "command", "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/session_start.py\"", "timeout": 20}]}
+    ],
+    "PreToolUse": [
+      {"matcher": "Bash|Edit|Write|MultiEdit|NotebookEdit|mcp__.*",
+       "hooks": [{"type": "command", "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/guard.py\"", "timeout": 30}]}
+    ],
+    "PostToolUse": [
+      {"matcher": "Bash|Edit|Write|MultiEdit|mcp__.*",
+       "hooks": [{"type": "command", "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/audit.py\"", "timeout": 20}]}
+    ],
+    "Stop": [
+      {"hooks": [{"type": "command", "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/stop_gate.py\"", "timeout": 20}]}
+    ]
+  }
+}

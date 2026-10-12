@@ -1,0 +1,43 @@
+{
+  "id": "base-clean",
+  "description": "Harbour Joinery September 2026 as delivered. Clean ledger with four reviewer warnings: a new unmapped expense account, an unrecorded bank fee, an aged receivable and a small accrual-to-invoice difference.",
+  "client": "harbour-joinery",
+  "period": "2026-09",
+  "overlays": [],
+  "expect": {
+    "state": "READY_FOR_REVIEW",
+    "blocking_codes": [],
+    "warning_codes": ["MAP_FALLBACK", "NEW_ACCOUNT", "BANKREC_UNRECORDED_ITEMS", "RECEIVABLE_AGED"],
+    "material_lines": ["pl.rev.contract", "pl.cos.materials", "pl.cos.subcontractors", "pl.opex.admin", "pl.opex.other"],
+    "pack": {
+      "pl.rev.contract":     {"month_actual": 182400, "month_budget": 160000, "month_var": 22400, "ytd_actual": 486500},
+      "pl.rev.total":        {"month_actual": 203700, "month_budget": 182000, "month_var": 21700},
+      "pl.cos.materials":    {"month_actual": 61850, "month_budget": 52000, "month_var": 9850},
+      "pl.cos.subcontractors": {"month_actual": 28300, "month_budget": 34000, "month_var": -5700},
+      "pl.gross_profit":     {"month_actual": 74300, "month_budget": 57000},
+      "pl.opex.admin":       {"month_actual": 8198, "month_budget": 3850, "month_var": 4348},
+      "pl.opex.other":       {"month_actual": 4600, "month_budget": 0},
+      "pl.opex.total":       {"month_actual": 60925.5, "month_budget": 51117.5},
+      "pl.net_profit":       {"month_actual": 14434.5, "month_budget": 5082.5, "month_var": 9352, "ytd_actual": 11067.5, "prior_month": -2044.5},
+      "bs.cash":             {"closing": 94772.5},
+      "bs.receivables":      {"closing": 118800, "prior_closing": 96400},
+      "bs.accruals":         {"closing": 14350},
+      "bs.net_assets":       {"closing": 186067.5},
+      "bs.total_equity":     {"closing": 186067.5},
+      "bs.current_earnings": {"closing": 11067.5}
+    },
+    "ties": {
+      "A1": {"tb": "44772.50", "workpaper": "44772.50"},
+      "B1": {"tb": "14350.00", "workpaper": "14350.00"},
+      "C1": {"tb": "118800.00", "workpaper": "118800.00"}
+    }
+  },
+  "commentary_labels": {
+    "pl.rev.contract": {"favourable": true, "driver_groups": [["xero:invoice:INV-1042"], ["email:msg-bayside-0922"]]},
+    "pl.cos.materials": {"favourable": false, "driver_groups": [["xero:invoice:TC-88801"], ["email:msg-timberco-0820", "xero:invoice:TC-88790"]]},
+    "pl.cos.subcontractors": {"favourable": true, "driver_groups": [["email:msg-sparky-0917"]]},
+    "pl.opex.admin": {"favourable": false, "driver_groups": [["wp:B1:B1.3", "doc:accruals-schedule-2026-09#r3:amount_ex_gst", "doc:inv-pinnacle-PA-7781#p1:L6", "doc:inv-pinnacle-PA-7781#p1:L2"]]},
+    "pl.opex.other": {"favourable": false, "driver_groups": [["xero:invoice:HI-5521"]]}
+  },
+  "gold_commentary": "base-clean.gold-commentary.json"
+}

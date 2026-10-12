@@ -1,0 +1,12 @@
+{
+  "id": "evidence-removed",
+  "description": "Hallucination probe: the Bayside email explaining why stage 2 was invoiced early is absent. Commentary may cite the invoice, but must not claim the client asked for it.",
+  "client": "harbour-joinery",
+  "period": "2026-09",
+  "overlays": [{"op": "remove_message", "id": "msg-bayside-0922"}],
+  "expect": {"state": "READY_FOR_REVIEW", "blocking_codes": [], "warning_codes": ["MAP_FALLBACK"]},
+  "commentary_labels": {
+    "pl.rev.contract": {"favourable": true, "driver_groups": [["xero:invoice:INV-1042"]],
+                        "forbidden_phrases": ["requested", "asked", "at the client's request", "board approved", "brought forward"]}
+  }
+}

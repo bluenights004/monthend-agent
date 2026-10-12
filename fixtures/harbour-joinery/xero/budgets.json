@@ -1,0 +1,369 @@
+{
+  "Budgets": [
+    {
+      "BudgetID": "5cc38e01-1d2d-54ed-accd-f5c4a7c335b6",
+      "Type": "OVERALL",
+      "Description": "FY2027 Board approved budget",
+      "Status": "ACTIVE",
+      "BudgetLines": [
+        {
+          "AccountID": "7be60c31-3d9f-5ff6-82b4-22e8512d584a",
+          "AccountCode": "200",
+          "BudgetBalances": [
+            {
+              "Period": "2026-07",
+              "Amount": 150000.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-08",
+              "Amount": 155000.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-09",
+              "Amount": 160000.0,
+              "Notes": ""
+            }
+          ]
+        },
+        {
+          "AccountID": "7ce3269a-19bd-5092-ab8f-5e5128b4d1de",
+          "AccountCode": "210",
+          "BudgetBalances": [
+            {
+              "Period": "2026-07",
+              "Amount": 20000.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-08",
+              "Amount": 20000.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-09",
+              "Amount": 22000.0,
+              "Notes": ""
+            }
+          ]
+        },
+        {
+          "AccountID": "94c07d75-5037-5b28-ad29-eec84e450346",
+          "AccountCode": "310",
+          "BudgetBalances": [
+            {
+              "Period": "2026-07",
+              "Amount": 51000.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-08",
+              "Amount": 52700.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-09",
+              "Amount": 52000.0,
+              "Notes": ""
+            }
+          ]
+        },
+        {
+          "AccountID": "802dc4b7-c8a7-5bd6-b567-718adfad5fef",
+          "AccountCode": "320",
+          "BudgetBalances": [
+            {
+              "Period": "2026-07",
+              "Amount": 33000.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-08",
+              "Amount": 33500.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-09",
+              "Amount": 34000.0,
+              "Notes": ""
+            }
+          ]
+        },
+        {
+          "AccountID": "804d4d86-fb60-5e7b-8084-947aef556809",
+          "AccountCode": "330",
+          "BudgetBalances": [
+            {
+              "Period": "2026-07",
+              "Amount": 39000.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-08",
+              "Amount": 39000.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-09",
+              "Amount": 39000.0,
+              "Notes": ""
+            }
+          ]
+        },
+        {
+          "AccountID": "f417bebd-e6ab-5cc2-96aa-3c4d628a2348",
+          "AccountCode": "400",
+          "BudgetBalances": [
+            {
+              "Period": "2026-07",
+              "Amount": 1500.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-08",
+              "Amount": 1500.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-09",
+              "Amount": 1500.0,
+              "Notes": ""
+            }
+          ]
+        },
+        {
+          "AccountID": "bea37b71-bcca-5bb2-9647-415a1809e6b6",
+          "AccountCode": "404",
+          "BudgetBalances": [
+            {
+              "Period": "2026-07",
+              "Amount": 100.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-08",
+              "Amount": 100.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-09",
+              "Amount": 100.0,
+              "Notes": ""
+            }
+          ]
+        },
+        {
+          "AccountID": "a7b4decf-3854-5817-a593-772ab7d663ac",
+          "AccountCode": "412",
+          "BudgetBalances": [
+            {
+              "Period": "2026-07",
+              "Amount": 2500.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-08",
+              "Amount": 2500.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-09",
+              "Amount": 2500.0,
+              "Notes": ""
+            }
+          ]
+        },
+        {
+          "AccountID": "35ff8be9-ee33-56cc-bf97-189854dac5a3",
+          "AccountCode": "416",
+          "BudgetBalances": [
+            {
+              "Period": "2026-07",
+              "Amount": 3150.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-08",
+              "Amount": 3150.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-09",
+              "Amount": 3150.0,
+              "Notes": ""
+            }
+          ]
+        },
+        {
+          "AccountID": "2d9a6f8e-081d-523f-9baf-be650c4b4271",
+          "AccountCode": "420",
+          "BudgetBalances": [
+            {
+              "Period": "2026-07",
+              "Amount": 9500.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-08",
+              "Amount": 9500.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-09",
+              "Amount": 9500.0,
+              "Notes": ""
+            }
+          ]
+        },
+        {
+          "AccountID": "fc60f94b-a6c1-577a-89ca-b5bec4e07d7f",
+          "AccountCode": "437",
+          "BudgetBalances": [
+            {
+              "Period": "2026-07",
+              "Amount": 820.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-08",
+              "Amount": 810.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-09",
+              "Amount": 800.0,
+              "Notes": ""
+            }
+          ]
+        },
+        {
+          "AccountID": "eae295cb-4305-55be-84b6-6b8f22be0b74",
+          "AccountCode": "445",
+          "BudgetBalances": [
+            {
+              "Period": "2026-07",
+              "Amount": 1700.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-08",
+              "Amount": 1700.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-09",
+              "Amount": 1700.0,
+              "Notes": ""
+            }
+          ]
+        },
+        {
+          "AccountID": "29015f50-3538-5255-8e52-5bf9678c512d",
+          "AccountCode": "461",
+          "BudgetBalances": [
+            {
+              "Period": "2026-07",
+              "Amount": 1250.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-08",
+              "Amount": 1250.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-09",
+              "Amount": 1250.0,
+              "Notes": ""
+            }
+          ]
+        },
+        {
+          "AccountID": "2605ef79-539c-5cc1-a315-afe2bb6c9fb9",
+          "AccountCode": "477",
+          "BudgetBalances": [
+            {
+              "Period": "2026-07",
+              "Amount": 24500.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-08",
+              "Amount": 24500.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-09",
+              "Amount": 24500.0,
+              "Notes": ""
+            }
+          ]
+        },
+        {
+          "AccountID": "5b39d7dd-481b-5c1f-b7c1-be1032edaf71",
+          "AccountCode": "478",
+          "BudgetBalances": [
+            {
+              "Period": "2026-07",
+              "Amount": 2817.5,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-08",
+              "Amount": 2817.5,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-09",
+              "Amount": 2817.5,
+              "Notes": ""
+            }
+          ]
+        },
+        {
+          "AccountID": "8e410d60-63ce-5ddf-b8bb-69a80e81ad76",
+          "AccountCode": "489",
+          "BudgetBalances": [
+            {
+              "Period": "2026-07",
+              "Amount": 3000.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-08",
+              "Amount": 3000.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-09",
+              "Amount": 3000.0,
+              "Notes": ""
+            }
+          ]
+        },
+        {
+          "AccountID": "b211ed1f-c2b1-5739-b7fd-8ec5832156a3",
+          "AccountCode": "493",
+          "BudgetBalances": [
+            {
+              "Period": "2026-07",
+              "Amount": 1100.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-08",
+              "Amount": 1100.0,
+              "Notes": ""
+            },
+            {
+              "Period": "2026-09",
+              "Amount": 1100.0,
+              "Notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

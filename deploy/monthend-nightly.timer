@@ -1,0 +1,9 @@
+[Unit]
+Description=Run the month-end agent at 02:00 (UTC+8) on weekdays
+
+[Timer]
+OnCalendar=Mon..Fri 02:00 Asia/Singapore
+Persistent=true
+
+[Install]
+WantedBy=timers.target

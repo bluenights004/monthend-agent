@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- macOS launchd: runs the overnight job at 02:00 local time, Monday to Friday.
+     Install: copy to ~/Library/LaunchAgents/, edit the paths, then
+     launchctl load ~/Library/LaunchAgents/com.yourfirm.monthend.nightly.plist -->
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.yourfirm.monthend.nightly</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string><string>-lc</string>
+    <string>cd "/path/to/monthend-agent" &amp;&amp; ./deploy/run-nightly.sh</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <array>
+    <dict><key>Weekday</key><integer>1</integer><key>Hour</key><integer>2</integer><key>Minute</key><integer>0</integer></dict>
+    <dict><key>Weekday</key><integer>2</integer><key>Hour</key><integer>2</integer><key>Minute</key><integer>0</integer></dict>
+    <dict><key>Weekday</key><integer>3</integer><key>Hour</key><integer>2</integer><key>Minute</key><integer>0</integer></dict>
+    <dict><key>Weekday</key><integer>4</integer><key>Hour</key><integer>2</integer><key>Minute</key><integer>0</integer></dict>
+    <dict><key>Weekday</key><integer>5</integer><key>Hour</key><integer>2</integer><key>Minute</key><integer>0</integer></dict>
+  </array>
+  <key>StandardOutPath</key><string>/path/to/monthend-agent/var/logs/launchd.out.log</string>
+  <key>StandardErrorPath</key><string>/path/to/monthend-agent/var/logs/launchd.err.log</string>
+</dict>
+</plist>

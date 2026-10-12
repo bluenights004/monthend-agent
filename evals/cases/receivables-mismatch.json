@@ -1,0 +1,11 @@
+{
+  "id": "receivables-mismatch",
+  "description": "A 2,000 manual journal debits receivables and credits revenue with no invoice behind it. Receivables no longer agree to open invoices; must block.",
+  "client": "harbour-joinery",
+  "period": "2026-09",
+  "overlays": [
+    {"op": "tb_adjust", "code": "610", "name": "Accounts Receivable", "section": "Assets", "month": "2000", "ytd": "2000"},
+    {"op": "tb_adjust", "code": "200", "name": "Sales - Fitout Contracts", "section": "Revenue", "month": "-2000", "ytd": "-2000"}
+  ],
+  "expect": {"state": "BLOCKED", "blocking_codes": ["RECEIVABLES_DO_NOT_TIE"], "warning_codes": []}
+}
